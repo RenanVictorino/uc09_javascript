@@ -1,0 +1,50 @@
+<!-- ATIVIDADE
+
+1.Adicionar uma moeda no jogo. Quando o jogador pegar ela, a moeda deve desaparecer
+
+2. Adicionar um limite no mapa. O jogador não pode sair do mapa nem pela esquerda nem pela direita
+
+3. Adicionar uma "corrida", que ao apertar uma tecla. invés de andar 1 casa ele anda 3
+
+4. Adicionar o plano Y no logo. Apertar a seta pra cima ou para baixo, ele sobe ou desce no plano -->
+
+<script>
+ 
+    let posicao = 6
+    let chao = "_"
+    let personagem = "&"
+    let tamanho_mundo = 20
+     
+    document.addEventListener("keyup", (e)=>{
+        if( e.key == "ArrowRight"){
+            posicao++
+           
+        }else if(e.key == "ArrowLeft"){
+           
+            posicao--
+       
+        }else if(e.key == "ArrowRight" && e.key == "Z"){
+            posicao = posicao + 3
+        }
+     
+        console.clear()
+        desenhar()
+       
+     
+    } )
+     
+    function desenhar(){
+        let mapa = ""
+     
+        for(let i = 0; i < tamanho_mundo; i++){
+            if( i == posicao){
+                mapa += personagem
+            }else{
+                mapa += chao
+            }
+           
+        }
+        console.log(mapa)
+    }
+     
+    </script>
