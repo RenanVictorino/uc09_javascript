@@ -59,17 +59,22 @@ function listar(){
         }, 1000);
 
     }else{
+        console.clear()
         console.log("----LISTAGEM-----")
         console.log("1 - Nome: [" + nome + "] | Idade: [" + idade + "] | Ativo: [" + ativoSim + "] " )
         prompt("Pressione enter para continuar...")
         main()
     }
+    return
 
 }
 
 // function sair(){
 //     console.log("-----SAIDO-----")
 // }
+
+// interpolaçao
+// console.log(`1 - nome [${nome}] idade: [${idade}] e status: [${ativo}]`)
 
 
 
