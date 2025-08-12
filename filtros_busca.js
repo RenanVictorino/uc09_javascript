@@ -54,6 +54,7 @@ function main(){
 function crescente(){
     for(let i=0; i < usuarios.length; i++ ){
         console.log(`ID [${i+1}] - ${usuarios[i].nome} | Idade: ${usuarios[i].idade}`)
+        console.log("TURMA 6B")
     }
 }
 
@@ -66,6 +67,7 @@ function decrescente(){
 function buscaNome(nome_busca){
     for(let i=0; i < usuarios.length; i++ )
         if(usuarios[i].nome.toUpperCase().includes(nome_busca.toUpperCase())){
+          
         console.log(`ID [${i+1}] - ${usuarios[i].nome} | Idade: ${usuarios[i].idade}`)
     }
 }
