@@ -1,0 +1,53 @@
+[
+  {
+    "id": 1,
+    "data": "2025-08-01",
+    "produtos": [
+      {
+        "nome": "Mouse Gamer",
+        "quantidade": 2,
+        "preco": 150
+      },
+      {
+        "nome": "Teclado Mecânico",
+        "quantidade": 1,
+        "preco": 350
+      }
+    ],
+    "valorTotal": 650
+  },
+  {
+    "id": 2,
+    "data": "2025-08-02",
+    "produtos": [
+      {
+        "nome": "Monitor 24\"",
+        "quantidade": 1,
+        "preco": 1200
+      },
+      {
+        "nome": "Headset USB",
+        "quantidade": 2,
+        "preco": 200
+      }
+    ],
+    "valorTotal": 1600
+  },
+  {
+    "id": 3,
+    "data": "2025-08-03",
+    "produtos": [
+      {
+        "nome": "Mouse Gamer",
+        "quantidade": 1,
+        "preco": 150
+      },
+      {
+        "nome": "Webcam Full HD",
+        "quantidade": 1,
+        "preco": 300
+      }
+    ],
+    "valorTotal": 450
+  }
+]
