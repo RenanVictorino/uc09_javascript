@@ -175,7 +175,7 @@ function editarAlunos(){
             alunos[id_procurado-1].ativo == novo_ativo
             
             console.log(`[${alunos[1].id}] - ${alunos[1].nome} - ${alunos[1].ativo}`)
-            prompt("ddd")
+            prompt("Aperte enter para continuar...")
             
         }else if(alteracao == "4"){
             let id_procurado = parseInt(prompt("Qual o id da troca:"))
