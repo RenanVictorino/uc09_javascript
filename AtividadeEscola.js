@@ -51,7 +51,6 @@ let alunos = [
     {id: 12, nome: "Maysa", idade: 15, ativo: false},
 ]
 
-let turmas
 
 let usuario = null
 
@@ -80,23 +79,23 @@ function main(){
     let opcao = prompt("Digite uma opção ")
 
     if( opcao == "1" ){
-        sistemaUsuarios()
+        cadastrarAlunos()
     }else if(opcao == "2"){
-        
+        buscarAlunos()
     }else if(opcao == "3"){
         editarAlunos()
     }else if(opcao == "4"){
-        deslogar()
+        buscarTurmas()
     }else if(opcao == "5"){
-        deslogar()
+        editarTurmas()
     }else if(opcao == "6"){
-        deslogar()
+        cadastrarUsuarios()
     }else if(opcao == "7"){
-        deslogar()
+        editarUsuarios()
     }else if(opcao == "8"){
-        deslogar()
+        cadastrarProfessores()
     }else if(opcao == "9"){
-        deslogar()
+        editarProfessores()
     }else if(opcao == "10"){
         deslogar()
     }
@@ -149,6 +148,7 @@ function buscarTurmas(){
 
 function editarAlunos(){
     
+    console.clear
    
     if (usuario.permissao == "recepcionista"){
         
@@ -161,17 +161,22 @@ function editarAlunos(){
         let alteracao = prompt("Digite a opção para alterar")
     
         if(alteracao == "1"){
-            let id_procurado = parseInt(prompt("Qual o id da troca:"))
+            let id_procurado = parseInt(prompt("Qual o id da troca: "))
             novo_nome = prompt("Digite o novo nome: ")
             alunos[id_procurado].nome == novo_nome
         }else if(alteracao == "2"){
-            let id_procurado = parseInt(prompt("Qual o id da troca:"))
+            let id_procurado = parseInt(prompt("Qual o id da troca: "))
             nova_idade = prompt("Digite a nova idade: ")
             alunos[id_procurado].nome == novo_nome
         }else if(alteracao == "3"){
-            let id_procurado = parseInt(prompt("Qual o id da troca:"))
+            console.clear
+            let id_procurado = parseInt(prompt("Qual o id da troca: "))
             novo_ativo = true
-            alunos[id_procurado].ativo == novo_ativo
+            alunos[id_procurado-1].ativo == novo_ativo
+            
+            console.log(`[${alunos[1].id}] - ${alunos[1].nome} - ${alunos[1].ativo}`)
+            prompt("ddd")
+            
         }else if(alteracao == "4"){
             let id_procurado = parseInt(prompt("Qual o id da troca:"))
             novo_ativo = false
@@ -191,6 +196,18 @@ function editarAlunos(){
 
 }
 
+function editarTurmas(){
+
+}
+
+function editarUsuarios(){
+
+}
+
+function editarProfessores(){
+
+}
+
 function alterar( indice ){
     let novo_nome = prompt("Digite o novo nome: ")
     usuarios[indice].nome = novo_nome
@@ -200,7 +217,6 @@ function alterar( indice ){
         main()
     }, 1000);
 }
-
 
 
 
